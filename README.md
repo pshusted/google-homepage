@@ -1,0 +1,1 @@
+This is a project to recreate google.com's homepage. It will demonstrate a basic understanding of html & css.
