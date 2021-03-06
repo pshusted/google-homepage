@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .main_header{
+            width:100%;
+            background:lightgray;
+            display: grid;
+            grid-template-columns:auto auto auto auto auto auto;
+        }
+        header .link1 {
+            background:lightblue
+        }
+        .Google_Image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .Search_Box {
+            display: flex;
+            justify-content: center;
+        }
+        .Main_Buttons{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+    <header class="main_header">
+        <div class="link1">
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        </div>
+        <div class="link2">
+            <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+        </div>
+        <div class="link3">
+            <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+        </div>
+        <div class="link4">
+            <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+        </div>
+        <div class="link5">
+            <a href="https://www.google.com/intl/en/about/products">...</a>
+        </div>
+        <div class="link6">
+            <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a>
+        </div>
+    </header>
 
-<h1>Google Baby!</h1>
+    <div>
+        <img class="Google_Image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>  
+        <form>
+            <div class="Search_Box">
+                <input type="text">
+            </div>
+            <div class="Main_Buttons">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </form>
 
+    <footer>
+
+    </footer>
 </body>
 </html>
