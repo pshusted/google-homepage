@@ -7,9 +7,16 @@
             background:lightgray;
             display: grid;
             grid-template-columns:auto auto auto auto auto auto;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         header .link1 {
             background:lightblue
+        }
+        .center_page {
+            position: relative;
+            top: 200px;
         }
         .Google_Image {
             max-width: 100%;
@@ -25,6 +32,25 @@
             display: flex;
             justify-content: center;
             padding: 10px;
+        }
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer ul {
+            display: flex;
+            justify-content: center;            
+            list-style-type: none;
+            align-items: center;
+        }
+        footer li {
+            margin: 0 10px;
+        }
+        .center_link{
+            flex-grow: 2;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -50,9 +76,9 @@
         </div>
     </header>
 
-    <div>
+    <div class="center_page">
         <img class="Google_Image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </div>  
+     
         <form>
             <div class="Search_Box">
                 <input type="text">
@@ -62,8 +88,17 @@
                 <button type="submit">I'm Feeling Lucky</button>
             </div>
         </form>
+    </div>
 
     <footer>
+        <ul>
+            <li class="push_left"><a href="#">Advertising</a></li>
+            <li class="push_left"><a href="#">Business</a></li>
+            <li class="center_link"><a href="#">Carbon neutral since 2007</a></li>
+            <li class="push_right"><a href="#">Privacy</a></li>
+            <li class="push_right"><a href="#">Terms</a></li>
+            <li class="push_right"><a href="#">Settings</a></li>
+        </ul>
 
     </footer>
 </body>
